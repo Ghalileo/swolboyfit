@@ -1,0 +1,128 @@
+#about-top {
+    background-position: center;
+    background-size: cover;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+#clear {
+    background-color: transparent;
+}
+
+
+#trans-blue {
+    background-color: #051940 !important;
+    font-size: 12px;
+    padding: 1%;
+    padding-top: 0%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+#trans-blue h1 {
+    color: #fcc931;
+}
+
+#trans-body {
+    z-index: 10;
+    filter: brightness(100%) !important;
+}
+
+.card-title {
+    font-size: 30px !important;
+}
+
+#sbf-philosophy {
+    font-size: 70px !important;
+    text-transform: uppercase;
+    color: #fcc931;
+    padding-top: 35%;
+}
+
+.card-text {
+    font-size: 20px;
+    opacity: 1 !important;
+}
+
+#trans-blue h1 {
+    padding-top: 5%;
+}
+
+/* List Group */
+.list-group {
+    border-radius: 0% !important;
+}
+
+.list-group h5 {
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+#green-title {
+    color: #2a4c09;
+}
+
+#gold-title {
+    color: #fcc931;
+}
+
+.list-group-item {
+    background-color: #fcc931;
+    padding: 3%;
+}
+
+#gold {
+    background-color: #fcc931;
+    color: #2a4c09;
+    font-size: 24px;
+}
+
+#green {
+    background-color: #2a4c09;
+    color: white;
+    font-size: 24px;
+}
+
+#right-text {
+    float: right !important;
+    text-align: right !important;
+}
+
+/* Anti-Statement */
+#anti-statement {
+    text-align: center;
+    padding: 5%;
+    background-color: #051940;
+}
+
+#anti-statement h1 {
+   font-size: 8vh;
+   color: #fcc931;
+}
+
+#anti-statement p {
+    font-size: 3vh;
+    color: white;
+ }
+
+/* Credentials */
+#triangle {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: #2a4c09;
+    border-top-left-radius: 85%;
+    border-top-right-radius: 85%;
+
+}
+
+#credentials h2 {
+    text-transform: uppercase;
+    color: #fcc931;
+}
+
+#credential-item {
+    background-color: transparent;
+}

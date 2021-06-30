@@ -1,0 +1,93 @@
+#read {
+    text-align: center;
+    display: flex;
+    padding: 5%;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+.card-header {
+    font-size: 6vh;
+}
+
+/*  */
+#for,
+#you-get {
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+}
+
+#for ol,
+#you-get ol {
+    display: block;
+    list-style-type: decimal !important;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+#for h1,
+#you-get h1 {
+    text-decoration: none;
+    width: fit-content;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    font-size: 40px;
+    text-transform: none;
+    border: 10px solid #2a4c09;
+    padding: 1%;
+    color: #fcc931;
+    font-family: "YACgEUFdPdA 0", _fb_, auto;
+}
+
+#for-list,
+#you-get-list {
+    text-align: left;
+    margin: 5%;
+    font-size: 20px;
+}
+
+#pricing,
+#start {
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 3%;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    /* background-color: #045DD1; */
+}
+
+.col-md {
+    margin: 3vh;
+}
+
+#price-back {
+    background-color: #045DD1;
+    padding: 5%;
+}
+
+#start {
+    padding: 5%;
+    font-size: 20px;
+}
+
+/*  */
+#intake-form {
+    background-color: #045DD1;
+    padding: .5%;
+    border: none;
+}
+
+#intake-form a {
+    color: white;
+}
