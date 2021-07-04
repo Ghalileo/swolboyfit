@@ -1,3 +1,35 @@
 body {
     background-color: #2a4c09;
 }
+.leftCols{
+    border: solid;
+    text-align: center;
+    background-color: #fcc931;
+    font-weight: bold;
+    padding: 1%;
+}
+.row1Cols{
+    border: solid;
+    text-align: center;
+    background-color: #fcc931;
+    font-weight: bold;
+    margin-right: -26px;
+}
+.descContent{
+    background-color: #335512;
+    border: solid;
+}
+.coachingPageDescription{
+    color: azure;
+    position: relative;
+    left: 300px;
+}
+
+.chartData{
+    color: white;
+    font-size: 10px;
+}
+.lineBreak{
+    color: #fcc931;
+    border: solid;
+}

@@ -472,3 +472,24 @@ footer {
     height: 40px !important; 
     width: fit-content !important; 
 }
+.bookAConsultation{
+    color: #fcc931;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    width: fit-content;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    font-family: "YACgEUFdPdA 0", _fb_, auto;
+    font-size: 34.8668px;
+    font-size: 20px;
+    text-transform: none;
+    border: 10px solid #2a4c09;
+    padding: 1%;
+}
+.coachingHeader{
+    color: #fcc931;
+}
+#coachingPageDescription{
+    border: solid;
+}
