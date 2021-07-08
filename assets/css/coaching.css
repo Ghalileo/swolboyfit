@@ -33,3 +33,13 @@ body {
     color: #fcc931;
     border: solid;
 }
+@media screen and (max-width: 600px){
+    .dataContainer{
+        display: none;
+    }
+}
+@media screen and (min-width: 600px){
+    .mobileContainer{
+        display: none;
+    }
+}
