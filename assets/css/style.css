@@ -1,3 +1,13 @@
+@font-face {
+    font-family: glacial;
+    src: url(../fonts/GlacialIndifference-Regular.otf);
+}
+
+@font-face{
+    font-family: nourdLight;
+    src: url(../fonts/Nord\ Light\ 300.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +51,8 @@ body {
     justify-items: center;
     padding-top: 1%;
     height: 8vh;
+    font: Arial;
+    font-family: nourdLight;
 }
 
 #list li, 
@@ -254,6 +266,16 @@ body {
     padding-left: 2%;
     padding-right: 2%;
 }
+#sbfPParagraph1 {
+    text-align: center;
+    font-family: glacial;
+    
+}
+#sbfPParagraph2{
+    font-size: 18px;
+    font-family: glacial;
+    
+}
 
 /***************************/
 /* Section 3/ Rows */
@@ -295,6 +317,7 @@ body {
     font-size: 28.2393px;
     font-size: 37px;
     text-transform: none;
+    font-family: 'Encode Sans SC', sans-serif;
 }
 
 .card-header {
@@ -339,9 +362,9 @@ body {
     background-color: #051940;
     text-transform: uppercase;
     transform: rotate(270deg);
-    width: 109% !important;
+    width: 148% !important;
     position: absolute;
-    left: -48% !important;
+    left: -67% !important;
     top: 45%;
     padding: 3%;
     font-size: 50px;
@@ -373,6 +396,7 @@ footer {
     float: left;
     margin: 5%;
     font-size: 24px;
+    font-family: nourdLight;
 }
 
 #footer-brand-name {
@@ -389,6 +413,7 @@ footer {
 
 #credits {
     text-align: center;
+    font-family: nourdLight;
 }
 
 #footer-contact {
@@ -492,4 +517,8 @@ footer {
 }
 #coachingPageDescription{
     border: solid;
+}
+
+.coachingSummary{
+    font-family: nourdLight;
 }
