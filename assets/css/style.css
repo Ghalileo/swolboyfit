@@ -51,8 +51,8 @@ body {
     justify-items: center;
     padding-top: 1%;
     height: 8vh;
-    font: Arial;
-    font-family: nourdLight;
+    font-family: 'Encode Sans SC', sans-serif
+    
 }
 
 #list li, 
@@ -317,7 +317,7 @@ body {
     font-size: 28.2393px;
     font-size: 37px;
     text-transform: none;
-    font-family: 'Encode Sans SC', sans-serif;
+    font-family: Georgia, serif;
 }
 
 .card-header {
@@ -507,10 +507,12 @@ footer {
     letter-spacing: 0.02em;
     font-family: "YACgEUFdPdA 0", _fb_, auto;
     font-size: 34.8668px;
-    font-size: 20px;
+    
     text-transform: none;
     border: 10px solid #2a4c09;
     padding: 1%;
+    position: relative;
+    left: 100px;
 }
 .coachingHeader{
     color: #fcc931;
@@ -520,5 +522,13 @@ footer {
 }
 
 .coachingSummary{
-    font-family: nourdLight;
+    font-family: 'Encode Sans SC', sans-serif;
 }
+
+
+/* DropDown css */
+.dropdown-menu a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-menu {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
