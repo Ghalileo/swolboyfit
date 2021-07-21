@@ -3,10 +3,7 @@
     src: url(../fonts/GlacialIndifference-Regular.otf);
 }
 
-@font-face{
-    font-family: nourdLight;
-    src: url(../fonts/Nord\ Light\ 300.ttf);
-}
+
 
 * {
     margin: 0;
@@ -51,7 +48,7 @@ body {
     justify-items: center;
     padding-top: 1%;
     height: 8vh;
-    font-family: 'Encode Sans SC', sans-serif
+    font-family: 'Encode Sans SC', sans-serif;
     
 }
 
@@ -362,9 +359,9 @@ body {
     background-color: #051940;
     text-transform: uppercase;
     transform: rotate(270deg);
-    width: 148% !important;
+    width: 161.4% !important;
     position: absolute;
-    left: -67% !important;
+    left: -74% !important;
     top: 45%;
     padding: 3%;
     font-size: 50px;
@@ -532,3 +529,7 @@ footer {
 .dropdown:hover .dropdown-menu {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.homePresImage{
+    filter: grayscale();
+}
