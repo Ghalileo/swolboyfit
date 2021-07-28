@@ -130,7 +130,7 @@ body {
   .form_wrapper input[type=submit]:focus {
     background: #2a4c09;
   }
-  .form_wrapper input[type=checkbox], .form_wrapper input[type=radio] {
+  .form_wrapper input[type=radio] {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -414,4 +414,22 @@ body {
   }
   #TCCheckBox{
     max-width: 80%;
+    display: inline-block !important;
   }
+.timeZones{
+  display: inline-block;
+  width: -30px
+}
+.paragraph{
+  resize: none;
+  width:350px;
+  height:100px;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .paragraph{
+    width:280px;
+  }
+}
+
