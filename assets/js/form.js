@@ -1,9 +1,9 @@
 
     // var form = document.getElementById("my-form");
     
-    document.getElementById('TCCheckBox').addEventListener('click', function (e) {
-      document.getElementById('formSubmitBtn').disabled = !e.target.checked;
-    });
+    function isChecked(checkbox, sub1) {
+        document.getElementById(sub1).disabled = !checkbox.checked;
+    }
 
     // async function handleSubmit(event) {
     //   event.preventDefault();
