@@ -1,3 +1,8 @@
+@font-face {
+  font-family: glacial;
+  src: url(../fonts/GlacialIndifference-Regular.otf);
+}
+
 body {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 14px;
@@ -438,3 +443,7 @@ body {
 
 .CheckBoxInput
 {display: none;}
+
+.formSectionTitle{
+  font-family: 'Glacial';
+}
