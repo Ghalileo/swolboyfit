@@ -220,12 +220,12 @@
   <h4>Are you interested in any weight/physique changes as part of your goals?</h4>
   <div class="radio_option">
 
-    <input type="radio" name="Are you interested in any weight/physique changes as part of your goal?" value="Yes" id="Yes" required>
+    <input type="radio" class="enableYes" name="Are you interested in any weight/physique changes as part of your goal?" value="Yes" id="Yes" onclick="enableBtn()" required>
     <label for="Yes">Yes</label>
-    <input type="radio" name="Are you interested in any weight/physique changes as part of your goal?" value="No" id="No" >
+    <input type="radio" class="enableNo" name="Are you interested in any weight/physique changes as part of your goal?" value="No" id="No" onclick="disableBtn()" >
     <label for="No">No</label>
     <br/>
-    <textarea type="text" class="paragraph" name="If yes, what is your current weight? Please give a brief description of your weight history." value="Yes" id="yes" placeholder=""></textarea>
+    <textarea type="text" class="paragraph yesPositiveParagraph" name="If yes, what is your current weight? Please give a brief description of your weight history." value="Yes" id="yes" placeholder="" disabled ></textarea>
     </div>
     
           

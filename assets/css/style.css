@@ -60,6 +60,7 @@ body {
     margin-right: 10px;
     font-size: 22px;
     list-style-type: none;
+    font-family: glacial;
 }
 
 .navbar button.navbar-toggle > span.icon-bar {
@@ -332,6 +333,7 @@ body {
 .card-text {
     color: white;
     font-size: 27px;
+    font-family: glacial;
 }
 
 .mb-3, .my-3 {
@@ -393,7 +395,7 @@ footer {
     float: left;
     margin: 5%;
     font-size: 24px;
-    font-family: nourdLight;
+    font-family: glacial;
 }
 
 #footer-brand-name {
@@ -519,7 +521,7 @@ footer {
 }
 
 .coachingSummary{
-    font-family: 'Encode Sans SC', sans-serif;
+    font-family: glacial;
 }
 
 

@@ -1,9 +1,23 @@
 
     // var form = document.getElementById("my-form");
-    
-    function isChecked(checkbox, sub1) {
-        document.getElementById(sub1).disabled = !checkbox.checked;
+    const textparagraph = document.getElementsByClassName("yesPositiveParagraph");
+    const optionyes = document.getElementsByClassName("enableYes")
+   
+
+    function enableBtn() {
+        textparagraph.disabled = false;
+        return false;
     }
+
+    function disableBtn () {
+        textparagraph.disabled = true;
+        return true;
+    }
+
+ 
+    
+
+    
 
     // async function handleSubmit(event) {
     //   event.preventDefault();
@@ -23,3 +37,6 @@
     //   });
     // }
     // form.addEventListener("submit", handleSubmit)
+
+    
+    
