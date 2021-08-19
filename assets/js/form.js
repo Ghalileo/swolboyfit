@@ -15,6 +15,9 @@
         
     }
 
+    function isChecked(checkbox, sub1) {
+        document.getElementById(sub1).disabled = !checkbox.checked;
+    }
     // $('input[type=radio]').change(function(){
     //     var $p = $(this).closest('.controls');
     //     var $checked = $p.find(':checked');
