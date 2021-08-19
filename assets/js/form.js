@@ -1,20 +1,25 @@
 
     // var form = document.getElementById("my-form");
-    const textparagraph = document.getElementsByClassName("yesPositiveParagraph");
-    const optionyes = document.getElementsByClassName("enableYes")
+    // const textparagraph = document.getElementsByClassName("yespositiveparagraph");
+    const thetextarea = document.getElementById("textP")
    
 
-    function enableBtn() {
-        textparagraph.disabled = false;
-        return false;
+    function enableBtn(thetextarea) {
+        
+        document.getElementById("textP").readOnly = false
+        
     }
 
     function disableBtn () {
-        textparagraph.disabled = true;
-        return true;
+        document.getElementById("textP").readOnly = true
+        
     }
 
- 
+    // $('input[type=radio]').change(function(){
+    //     var $p = $(this).closest('.controls');
+    //     var $checked = $p.find(':checked');
+    //     $('#responder_' + this.id.slice(-1)).prop('disabled',$checked.val() == 'No');   
+    // }).change();
     
 
     

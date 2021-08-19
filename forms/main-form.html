@@ -220,30 +220,33 @@
   <h4>Are you interested in any weight/physique changes as part of your goals?</h4>
   <div class="radio_option">
 
-    <input type="radio" class="enableYes" name="Are you interested in any weight/physique changes as part of your goal?" value="Yes" id="Yes" onclick="enableBtn()" required>
+    <input type="radio" class="enableYes" name="Are you interested in any weight/physique changes as part of your goal?" value="Yes" id="Yes" oninput="enableBtn()" required>
     <label for="Yes">Yes</label>
-    <input type="radio" class="enableNo" name="Are you interested in any weight/physique changes as part of your goal?" value="No" id="No" onclick="disableBtn()" >
+    <input type="radio" class="enableNo" name="Are you interested in any weight/physique changes as part of your goal?" value="No" id="No" oninput="disableBtn()" >
     <label for="No">No</label>
     <br/>
-    <textarea type="text" class="paragraph yesPositiveParagraph" name="If yes, what is your current weight? Please give a brief description of your weight history." value="Yes" id="yes" placeholder="" disabled ></textarea>
+    <div class="controls">
+    <h5>If yes, what is your current weight? Please give a brief description of your weight history.</h5>
+    <textarea type="text" class="paragraph yespositiveparagraph" name="If yes, what is your current weight? Please give a brief description of your weight history." value="Yes" id="textP" placeholder="" readonly></textarea>
     </div>
-    
+  </div>
+    <br/>
           
   <h4>What is your daily, non-exercise activity level (housework, walking to work or school, home repairs, moving around at work, gardening)?</h4>
   <div class="customTextArea"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
     <textarea type="text" class="paragraph" name="What is your daily, non-exercise activity level(housework, walking to work or school, home repairs, moving around at work, gardening)?" placeholder="EX:(housework, walking to work or school, home repairs, moving around at work, gardening)?"></textarea>
     
 </div> 
-<h4>Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?  If yes, please specify.</h4>
+<h4>Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?</h4>
 <div class="radio_option"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-    <input type="radio" name="Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?" value="Yes____" id="Yes____" required>
+    <input type="radio" name="Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?" value="Yes____" id="Yes____"  required>
     <label for="Yes____">Yes</label>
-    <input type="radio" name="Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?" value="No____" id="No____" >
+    <input type="radio" name="Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?" value="No____" id="No____"  >
     <label for="No____">No</label>
-    <br/>
-    <br/>
-  <textarea type="text" class="paragraph" name="Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?" value="Yes" id="yes" placeholder=""></textarea>    
+    <h5>If yes, please specify.</h5>
+  <textarea type="text" class="paragraph" name="Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?" value="Yes" id="textP" placeholder="" ></textarea>    
 </div> 
+<br/>
 
 <h4>Have you tried anything in the past to change your habits, health, fitness, and/or body?</h4>
 <div class="radio_option"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
@@ -251,20 +254,20 @@
     <label for="Yes_____">Yes</label>
     <input type="radio" name="Have you tried anything in the past to change your habits, health, fitness, and/or body?" value="No_____" id="No_____" >
     <label for="No_____">No</label>
-    <br/>
-    <br/>
+    
 </div> 
 
-<h4>Which of those things worked well for you?</h4>
+<h5>Which of those things worked well for you?</h5>
 <div class="customTextArea"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-  <textarea type="text" class="paragraph" name="Which of those things worked well for you?(Even if you might not be doing it right now.)" placeholder=""></textarea>
+  <textarea type="text" class="paragraph smallerText" name="Which of those things worked well for you?(Even if you might not be doing it right now.)" placeholder=""></textarea>
 </div> 
 
-<h4>Which of those things didnt work well for you? Which of those things didnt work well for you?</h4>
+
+<h5>Which of those things didnt work well for you?</h5>
 <div class="customTextArea"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-  <textarea type="text" class="paragraph" name="Which of those things didnt work well for you?" placeholder=""></textarea>
+  <textarea type="text" class="paragraph smallerText" name="Which of those things didnt work well for you?" placeholder=""></textarea>
 </div> 
-
+<br/>
 <h4>How much time are you willing to devote to an exercise program?  Please answer in minutes/day, and days/week.</h4>
 <div class="customTextArea"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
   <textarea type="text" class="paragraph" name="Please answer in minutes/day, and days/week."></textarea>
@@ -599,8 +602,8 @@
     <input type="radio" name="Do you have any food or exercise rituals that concern you?  If yes, please explain" value="No______" id="No______" >
     <label for="No______">No</label>
     <br/>
-    <br/>
-  <textarea type="text" class="paragraph" name="Do you have any food or exercise rituals that concern you?  If yes, please explain" placeholder="If yes, please explain"></textarea>
+    <h5>If yes, please explain</h5>
+  <textarea type="text" class="paragraph" name="Do you have any food or exercise rituals that concern you?  If yes, please explain" placeholder=""></textarea>
 </div>
 
 <h4>What do you currently track or have tracked in the past?</h4>
@@ -623,7 +626,8 @@
   <label class="verticalButton" for="nothing">Nothing</label>
   <input class="CheckBoxInput"type="checkbox" name="What do you currently track or have tracked in the past?" value="other" id="other" / >
   <label class="verticalButton" for="other">Other</label>
-  <textarea type="text" class="paragraph smallerText" name="What do you currently track or have tracked in the past?" placeholder="If other, please specify"  ></textarea>
+  <h5>If other, please explain</h5>
+  <textarea type="text" class="paragraph smallerText" name="What do you currently track or have tracked in the past?"></textarea>
 </div>
 
 <h4>What would you be comfortable or willing to track?</h4>
