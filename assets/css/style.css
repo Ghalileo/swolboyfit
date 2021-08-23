@@ -535,3 +535,8 @@ footer {
 .homePresImage{
     filter: grayscale();
 }
+
+.instaIcon{
+    position: relative;
+    bottom: 11px;
+}
