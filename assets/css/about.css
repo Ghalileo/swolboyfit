@@ -13,10 +13,12 @@
 #trans-blue {
     background-color: #051940 !important;
     font-size: 12px;
-    padding: 1%;
+    padding: 2%;
     padding-top: 0%;
     padding-bottom: 5%;
     color: white;
+    background: rgba(0, 0, 0, 0.6);
+      
 }
 
 #trans-blue h1 {
@@ -33,7 +35,7 @@
 }
 
 #sbf-philosophy {
-    font-size: 70px !important;
+    font-size: 50px !important;
     text-transform: uppercase;
     color: #fcc931;
     padding-top: 35%;
@@ -125,4 +127,30 @@
 
 #credential-item {
     background-color: transparent;
+    color: white;
+}
+.allCoachingServicesBtn{
+    background-color: #051940;
+    color: #fcc931;
+    border: solid;
+    border-radius: -50px;
+    border-color: #fcc931;
+}
+
+.allCoachingServicesBtn:hover{
+    background-color: #2a4c09;
+    border: solid;
+    color: black;
+    border-color: #fcc931;
+    transition-duration: 0.4s;
+}
+
+.theCoachElement{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: black;
+    position: relative;
+    bottom: 420px;
+    right: 185px;
+    font-size: 40%;
 }
