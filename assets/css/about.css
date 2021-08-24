@@ -35,10 +35,11 @@
 }
 
 #sbf-philosophy {
-    font-size: 50px !important;
+    font-size: 70px !important;
     text-transform: uppercase;
     color: #fcc931;
     padding-top: 35%;
+    font-family: 'Oswald', "YACgEQY10lw 0", _fb_, auto;
 }
 
 .card-text {
@@ -133,15 +134,17 @@
     background-color: #051940;
     color: #fcc931;
     border: solid;
-    border-radius: -50px;
+    
     border-color: #fcc931;
+    border-width: thick;
 }
 
 .allCoachingServicesBtn:hover{
     background-color: #2a4c09;
     border: solid;
-    color: black;
+    color: #fcc931;
     border-color: #fcc931;
+    border-width: thick;
     transition-duration: 0.4s;
 }
 
@@ -153,4 +156,16 @@
     bottom: 420px;
     right: 185px;
     font-size: 40%;
+}
+
+.aboutSubHeading{
+    font-style: italic;
+}
+
+.valuesHeader{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.valueNumber{
+    font-family: 'Cormorant Garamond', serif;
 }

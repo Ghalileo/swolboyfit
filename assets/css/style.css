@@ -540,3 +540,19 @@ footer {
     position: relative;
     bottom: 11px;
 }
+
+.sbfLink{
+    color: white;
+}
+#green{
+    background-color: #2a4c09;
+}
+.readMore{
+    background-color: #fcc931;
+}
+#greenText{
+    color: #2a4c09;
+}
+#blueText{
+    color: #051d40;
+}
