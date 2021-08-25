@@ -22,7 +22,7 @@ body {
 .coachingPageDescription{
     color: azure;
     position: relative;
-    left: 300px;
+    left: 345px;
 }
 
 .chartData{
@@ -33,6 +33,14 @@ body {
     color: #fcc931;
     border: solid;
 }
+.allPricesDesc{
+    color: white;
+    text-align: center;
+}
+/* .coachingHeader{
+    position: relative;
+    left: 275px;
+} */
 @media screen and (max-width: 600px){
     .dataContainer{
         display: none;
