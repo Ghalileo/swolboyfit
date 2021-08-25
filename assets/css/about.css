@@ -169,3 +169,7 @@
 .valueNumber{
     font-family: 'Cormorant Garamond', serif;
 }
+.coachSummaryStatement{
+    position: relative;
+    bottom: 100px;
+}
