@@ -49,34 +49,34 @@
 
 // Consulation Hide/Show Function's
 function showTraining()  {
-    var hiddensection = document.getElementsByClassName("hidden");
+    var enablefirst = document.getElementsByClassName("firstanswer");
     let enabletraining = document.getElementById("training")
     let enablenutrition = document.getElementById("nutrition")
     let enableboth = document.getElementById("both");
     // if (enabletraining.checked == true ){
     //     hiddensection.style.display = "block";
     // }
-    for(var i=0; i<hiddensection.length; i+=1)
-    $('.hidden').css('display', 'block');
+    for(var i=0; i<enablefirst.length; i+=1)
+    $('.firstanswer').css('display', 'block');
     $('.secondanswer').css('display', 'none');
+    $('.thirdanswer').css('display', 'none');
     return;
 }
 
 function showNutrition() {
     var hiddensectiontwo = document.getElementsByClassName("secondanswer")
-    var hidefirstsection = document.getElementsByClassName("firstanswer")
     for(var i=0; i<hiddensectiontwo.length; i+=1)
     $('.secondanswer').css('display', 'block')
     $('.firstanswer').css('display', 'none');
-    
+    $('.thirdanswer').css('display', 'none');
     return;
 }
 
 function showBoth() {
-    var thirdsection = document.getElementsByClassName("thirdsection")
-    for(var i=0; thirdsection.length; i+=1)
-    $('.thirdsection').css('display', 'block')
-    $('.firstanswer').css('display', 'none')
-    $('.secondanswer').css('display', 'none')
+    var hiddensectionthird = document.getElementsByClassName("thirdanswer")
+    for(var i=0; i<hiddensectionthird.length; i+=1)
+    $('.thirdanswer').css('display', 'block');
+    $('.firstanswer').css('display', 'none');
+    $('.secondanswer').css('display', 'none');
     return;
 }
