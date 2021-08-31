@@ -556,3 +556,10 @@ footer {
 #blueText{
     color: #051d40;
 }
+
+@media screen and (max-width:600px) {
+    .instaIcon{
+        position: relative;
+        top: 0.7px;
+    }
+}

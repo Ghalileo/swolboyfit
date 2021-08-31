@@ -1,7 +1,7 @@
 
     // var form = document.getElementById("my-form");
     // const textparagraph = document.getElementsByClassName("yespositiveparagraph");
-    const 
+     
     const thetextarea = document.getElementById("textP")
    
 
@@ -46,36 +46,37 @@
     //   });
     // }
     // form.addEventListener("submit", handleSubmit)
-// Test funtion #1
-// function showSection() {
-//     [].forEach.call(document.querySelectorAll('name=optionone'), function(button){
-//         document.getElementById(button.dataset.divid).className = button.checked? '' : 'hidden';
-//     })
-// }
 
-// window.onload = function () {
-//     [].forEach.call(document.querySelectorAll(['name=optionone']), function (button){
-//         button.onclick = showSection;
-//     })
-// }
-// End
-// Test Function #2
-// function handleOne() {
-//     const divOne = document.getElementById("firstanswer");
-//     if (divOne.hasAttribute('hidden')) {
-//       divOne.removeAttribute('hidden');
-//     } else {
-//       divOne.setAttribute('hidden');
-//     }
-//   }
-//   End
-// Test Function #3
-// $(document).ready(function() {
-//     $("input[name$='optionone']").click(function() {
-//         var test = $(this).val();
+// Consulation Hide/Show Function's
+function showTraining()  {
+    var hiddensection = document.getElementsByClassName("hidden");
+    let enabletraining = document.getElementById("training")
+    let enablenutrition = document.getElementById("nutrition")
+    let enableboth = document.getElementById("both");
+    // if (enabletraining.checked == true ){
+    //     hiddensection.style.display = "block";
+    // }
+    for(var i=0; i<hiddensection.length; i+=1)
+    $('.hidden').css('display', 'block');
+    $('.secondanswer').css('display', 'none');
+    return;
+}
 
-//         $("div.desc").hide();
-//         $("#thefirstanswer" + test).show();
-//     });
-// });
-// 
+function showNutrition() {
+    var hiddensectiontwo = document.getElementsByClassName("secondanswer")
+    var hidefirstsection = document.getElementsByClassName("firstanswer")
+    for(var i=0; i<hiddensectiontwo.length; i+=1)
+    $('.secondanswer').css('display', 'block')
+    $('.firstanswer').css('display', 'none');
+    
+    return;
+}
+
+function showBoth() {
+    var thirdsection = document.getElementsByClassName("thirdsection")
+    for(var i=0; thirdsection.length; i+=1)
+    $('.thirdsection').css('display', 'block')
+    $('.firstanswer').css('display', 'none')
+    $('.secondanswer').css('display', 'none')
+    return;
+}

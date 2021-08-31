@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="../assets/css/style.css"></link>
     <link type="text/css" rel="stylesheet" href="../assets/css/form.css"></link>
-    <link type="text/css" rel="stylesheet" href="../assets/css/consultationform.css"></link>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Consultation-In-Take-Form</title>
 </head>
@@ -41,283 +41,678 @@
               <form id="my-form" action="https://formspree.io/f/xbjqzqzr" method="POST">
 
                 <!-- Section 1 -->
-                <h4>Are you working with a nutritionist, registered dietitian, or other nutrition consultant?</h4>
-    <div class="radio_option">
+                <h4>Email</h4>
+                <div class="input_field"> 
+                  <input type="email" name="email" placeholder="Email" required />
+                </div>
 
-      <input type="radio" name="Are you working with a nutritionist, registered dietitian, or other nutrition consultant?" value="Yes__" id="Yes__" required>
-      <label for="Yes__">Yes</label>
-      <input type="radio" name="Are you working with a nutritionist, registered dietitian, or other nutrition consultant?" value="No__" id="No__" required>
-      <label for="No__">No</label>
+                <div class="row clearfix">
+                    <div class="col_half">
+                      <h4>First Name</h4>
+                      <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                        <input type="text" name="First Name" placeholder="First Name" />
+                      </div>
+                    </div>
+                    <div class="col_half">
+                      <h4>Last Name</h4>
+                      <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                        <input type="text" name="Last Name" placeholder="Last Name" required />
+                      </div>
+                    </div>
+                  </div>
+
+                <h4>Pronouns</h4>
+                <div class="input_field">                  
+                  <input type="text" name="pronouns" placeholder="Pronouns (optional)"  />
+                </div>  
+
+                <h4>Age</h4>
+                <div class="input_field"> 
+                  <input type="text" name="Age" placeholder="Age"  / required>
+                </div> 
+
+                <h4>Height</h4>
+                <div class="input_field">                 
+                  <input type="text" name="Height" placeholder="Height (Feet/Inches/Meters)"  / required>
+                </div>
+
+                <h4>Birthday</h4>
+                <div class="input_field">                   
+                  <input type="text" name="Birthday" placeholder="Date of Birth" / required>
+                </div>
+
+                <h4>Time-Zone</h4>
+                <div class="input_field "> 
+                    <input type="text" name="Time-Zone" placeholder="Time Zone" / required>                
+                    
+                    <!-- <select id="time-zone" name="time-zone" class="timeZones" required>
+                      
+   <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+   <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+   <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+   <option value="US/Alaska">(GMT-09:00) Alaska</option>
+   <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+   <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+   <option value="US/Arizona">(GMT-07:00) Arizona</option>
+   <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+   <option value="US/Mountain">(GMT-07:00) Mountain Time (US & Canada)</option>
+   <option value="America/Managua">(GMT-06:00) Central America</option>
+   <option value="US/Central">(GMT-06:00) Central Time (US & Canada)</option>
+   <option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+   <option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
+   <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+   <option value="US/Eastern">(GMT-05:00) Eastern Time (US & Canada)</option>
+   <option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
+   <option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
+   <option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
+   <option value="America/Manaus">(GMT-04:00) Manaus</option>
+   <option value="America/Santiago">(GMT-04:00) Santiago</option>
+   <option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
+   <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+   <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
+   <option value="America/Godthab">(GMT-03:00) Greenland</option>
+   <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+   <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+   <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+   <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+   <option value="Africa/Casablanca">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+   <option value="Etc/Greenwich">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+   <option value="Europe/Amsterdam">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+   <option value="Europe/Belgrade">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+   <option value="Europe/Brussels">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+   <option value="Europe/Sarajevo">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+   <option value="Africa/Lagos">(GMT+01:00) West Central Africa</option>
+   <option value="Asia/Amman">(GMT+02:00) Amman</option>
+   <option value="Europe/Athens">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+   <option value="Asia/Beirut">(GMT+02:00) Beirut</option>
+   <option value="Africa/Cairo">(GMT+02:00) Cairo</option>
+   <option value="Africa/Harare">(GMT+02:00) Harare, Pretoria</option>
+   <option value="Europe/Helsinki">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+   <option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option>
+   <option value="Europe/Minsk">(GMT+02:00) Minsk</option>
+   <option value="Africa/Windhoek">(GMT+02:00) Windhoek</option>
+   <option value="Asia/Kuwait">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+   <option value="Europe/Moscow">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+   <option value="Africa/Nairobi">(GMT+03:00) Nairobi</option>
+   <option value="Asia/Tbilisi">(GMT+03:00) Tbilisi</option>
+   <option value="Asia/Tehran">(GMT+03:30) Tehran</option>
+   <option value="Asia/Muscat">(GMT+04:00) Abu Dhabi, Muscat</option>
+   <option value="Asia/Baku">(GMT+04:00) Baku</option>
+   <option value="Asia/Yerevan">(GMT+04:00) Yerevan</option>
+   <option value="Asia/Kabul">(GMT+04:30) Kabul</option>
+   <option value="Asia/Yekaterinburg">(GMT+05:00) Yekaterinburg</option>
+   <option value="Asia/Karachi">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+   <option value="Asia/Calcutta">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+   <option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenapura</option>
+   <option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
+   <option value="Asia/Almaty">(GMT+06:00) Almaty, Novosibirsk</option>
+   <option value="Asia/Dhaka">(GMT+06:00) Astana, Dhaka</option>
+   <option value="Asia/Rangoon">(GMT+06:30) Yangon (Rangoon)</option>
+   <option value="Asia/Bangkok">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+   <option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+   <option value="Asia/Hong_Kong">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+   <option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur, Singapore</option>
+   <option value="Asia/Irkutsk">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+   <option value="Australia/Perth">(GMT+08:00) Perth</option>
+   <option value="Asia/Taipei">(GMT+08:00) Taipei</option>
+   <option value="Asia/Tokyo">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+   <option value="Asia/Seoul">(GMT+09:00) Seoul</option>
+   <option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option>
+   <option value="Australia/Adelaide">(GMT+09:30) Adelaide</option>
+   <option value="Australia/Darwin">(GMT+09:30) Darwin</option>
+   <option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
+   <option value="Australia/Canberra">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+   <option value="Australia/Hobart">(GMT+10:00) Hobart</option>
+   <option value="Pacific/Guam">(GMT+10:00) Guam, Port Moresby</option>
+   <option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option>
+   <option value="Asia/Magadan">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+   <option value="Pacific/Auckland">(GMT+12:00) Auckland, Wellington</option>
+   <option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+   <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
+                    </select> -->
+                </div>
+                
+                <h4>Skype/Google Meet</h4>
+                <div class="input_field">                 
+                  <input type="text" name="Skype/Google Meet ID" placeholder="Skype or GoogleMeet Name/ID (specify which)" / required>
+                </div>
+
+                <h4>Mailing Address</h4>
+                <div class="input_field">                 
+                  <input type="text" name="Mailing Address" placeholder="Mailing Address" / required>
+              </div>
+
+              <h4>City</h4>
+              <div class="input_field">                
+                <input type="text" name="City" placeholder="City" / required>
+            </div>
+
+            <h4>State</h4>
+            <div class="input_field">           
+              <input type="text" name="State" placeholder="State/Province" / required>
+          </div>
+
+          <h4>Country</h4>
+          <div class="input_field">          
+            <input type="text" name="Country" placeholder="Country" / required>
+        </div>
+
+        <h4>Zip</h4>
+        <div class="input_field"> 
+          <input type="text" name="Zip" placeholder="Zip/Postal" / required>
+      </div>
+
+      <h4>Are you currently working with another coach/trainer?</h4>
+      
+        <div class="radio_option">
+
+          <input type="radio" name="Are you currently working with another coach/trainer?" value="Yes_" id="Yes_" required>
+          <label for="Yes_">Yes</label>
+          <input type="radio" name="Are you currently working with another coach/trainer?" value="No_" id="No_" required>
+          <label for="No_">No</label>
+      
+          </div>
+      <br>
+<!-- Custom Section -->
+<!-- Placeholder for logic question -->
+<h4>What are you primarily interested in disucssing during out consultation?</h4>
+<div class ="radio_option">
+    <input type="radio" name="optionone" value="Training_" id="training" required>
+    <label for="training" onclick="showTraining()" id="training">Training</label>
+    <input type="radio" name="optionone" value=Nutrition_" id="nutrition" required>
+    <label for="nutrition" onclick="showNutrition()">Nutrition</label>
+    <input type="radio" name="optionone" value="Both_" id="both" required>
+    <label for="both"onclick="showBoth()">Both</label>
+</div>
+
+<div class="firstanswer hidden firstandsecond" id="thefirstanswer">
+<div class="title_container">
+  <h2 class="formCssgroup formSectionTitle">Weight Training</h2>
+  <p class="formCssgroup">Answer these questions about your current weight/resistance/bodyweight training (if you perform any) as best you can, so I can have an idea of where you're at.</p>
+</div>
+
+<h4>Please summarize your current resistance/weight training split/regimen (if any)</h4>
+<div class="customTextArea"> 
+  <textarea class="paragraph" type="text" name="Please summarize your current resistance/weight training split/regimen (if any)" ></textarea>
+</div> 
+
+<h4>How many sets do you generally perform per workout?  If unknown, would you descruve your training as low, medium, or high volume(few, average, or many sets/reps per workout)?  What rep range(s) do you work in?  How often do you train to failure or past failure?</h4>
+<div class="customTextArea"> 
+  <textarea type="text" class="paragraph" name="How many sets do you generally perform per workout?  If unknown, would you descruve your training as low, medium, or high volume(few, average, or many sets/reps per workout)?  What rep range(s) do you work in?  How often do you train to failure or past failure.  Answer as much as you can, leace blank if unknown."  ></textarea>
+</div> 
+
+<h4>Rate your perception of the exertion of your current weight training program:</h4>
+<div class=" radio_option"> 
+    
+    
+
+
+<input type="radio" name="Rate your perception of the exertion of your current weight training program" id="None" value="None"/>
+<label class="verticalButton" for="None">None</label>
+
+<input type="radio" name="Rate your perception of the exertion of your current weight training program" id="Light" value="Light"/>
+<label class="verticalButton" for="Light">Light</label>
+
+<input type="radio" name="Rate your perception of the exertion of your current weight training program" id="FairlyLight" value="FairlyLight"/>
+<label class="verticalButton" for="FairlyLight">Fairly Light</label>
+
+<input type="radio" name="Rate your perception of the exertion of your current weight training program" id="somewhatHard" value="somewhatHard"/>
+<label class="verticalButton" for="somewhatHard">Somewhat Hard</label>
+
+<input type="radio" name="Rate your perception of the exertion of your current weight training program" id="Hard" value="Hard"/>
+<label class="verticalButton" for="Hard">Hard</label>
+
+</div> 
+
+<br/>
+
+<div class="title_container">
+  <h2 class="formCssgroup formSectionTitle">Cardiovascular Training</h2>
+  <p class="formCssgroup">Answer these questions about your current cardio/endurance/aerobic training (if you perform any) as best you can, do I can have an idea of where you're at. If you don't do any cardio, write "none".</p>
+</div>
+
+<h4>Please summarize your current cardiovascular training regimen (if any).  Include schedule, intensity and type.</h4>
+<div class="customTextArea"> 
+  <textarea type="text" class="paragraph" name="Please summarize your current cardiovascular training regimen (if any).  Include schedule, intensity and type."  ></textarea>
+</div> 
+
+<h4>Rate your perception of the exertion of your current cardio program</h4>
+<div class="radio_option"> 
   
-      </div>
-      <!-- Placeholder for logic question -->
-      <h4>What are you primarily interested in disucssing during out consultation?</h4>
-      <div class ="radio_option">
-          <input type="radio" name="optionone" value="Training_" id="Training_" required>
-          <label for="Training_" onchange="handleOne()">Training</label>
-          <input type="radio" name="optionone" value=Nutrition_" id="Nutrition_" required>
-          <label for="Nutrition_">Nutrition</label>
-          <input type="radio" name="optionone" value="Both_" id="Both_" required>
-          <label for="Both_">Both</label>
-      </div>
+<input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="None_" value="None_"/>
+<label class="verticalButton" for="None_">None</label>
 
-      <div class="firstanswer hidden" id="thefirstanswer">
-      <div class="title_container">
-        <h2 class="formCssgroup formSectionTitle">Weight Training</h2>
-        <p class="formCssgroup">Answer these questions about your current weight/resistance/bodyweight training (if you perform any) as best you can, so I can have an idea of where you're at.</p>
-      </div>
-      
-      <h4>Please summarize your current resistance/weight training split/regimen (if any)</h4>
-      <div class="customTextArea"> 
-        <textarea class="paragraph" type="text" name="Please summarize your current resistance/weight training split/regimen (if any)" ></textarea>
-      </div> 
-      
-      <h4>How many sets do you generally perform per workout?  If unknown, would you descruve your training as low, medium, or high volume(few, average, or many sets/reps per workout)?  What rep range(s) do you work in?  How often do you train to failure or past failure?</h4>
-      <div class="customTextArea"> 
-        <textarea type="text" class="paragraph" name="How many sets do you generally perform per workout?  If unknown, would you descruve your training as low, medium, or high volume(few, average, or many sets/reps per workout)?  What rep range(s) do you work in?  How often do you train to failure or past failure.  Answer as much as you can, leace blank if unknown."  ></textarea>
-      </div> 
-      
-      <h4>Rate your perception of the exertion of your current weight training program:</h4>
-      <div class=" radio_option"> 
-          
-          
-      
-      
-      <input type="radio" name="Rate your perception of the exertion of your current weight training program" id="None" value="None"/>
-      <label class="verticalButton" for="None">None</label>
-      
-      <input type="radio" name="Rate your perception of the exertion of your current weight training program" id="Light" value="Light"/>
-      <label class="verticalButton" for="Light">Light</label>
-      
-      <input type="radio" name="Rate your perception of the exertion of your current weight training program" id="FairlyLight" value="FairlyLight"/>
-      <label class="verticalButton" for="FairlyLight">Fairly Light</label>
-      
-      <input type="radio" name="Rate your perception of the exertion of your current weight training program" id="somewhatHard" value="somewhatHard"/>
-      <label class="verticalButton" for="somewhatHard">Somewhat Hard</label>
-      
-      <input type="radio" name="Rate your perception of the exertion of your current weight training program" id="Hard" value="Hard"/>
-      <label class="verticalButton" for="Hard">Hard</label>
-      
-      </div> 
-      
+<input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="Light_" value="Light_"/>
+<label class="verticalButton" for="Light_">Light</label>
+
+<input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="FairlyLight_" value="FairlyLight_"/>
+<label class="verticalButton" for="FairlyLight_">Fairly Light</label>
+
+<input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="somewhatHard_" value="somewhatHard_"/>
+<label class="verticalButton" for="somewhatHard_">Somewhat Hard</label>
+
+<input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="Hard_" value="Hard_"/>
+<label class="verticalButton" for="Hard_">Hard</label>
+</div>
+</div>
+ <!--End of First Answer  -->
+
+ <div class="secondanswer hidden firstandsecond">
+  <div class="title_container">
+      <h2 class="formCssgroup formSectionTitle">Nutrition</h2>
+      <p class="formCssgroup">Please answer as many of these questions as you feel comfortable as best you can, so I can have an idea of where you're at.</p>
       <br/>
+      
+      <p class="formCssgroup">I'm not a nutritionist or registered dietician so I do not develop personalized meal plans, however I am certified to help with general nutrition education, teach you dietary habit change, and provide you with the tools, resources, and recommendations to guide you toward a diet that meets your goals. Answering these questions as thoroughly as you can will help me understand how your nutritional habits will affect your training in the gym, and help as a baseline for future nutritional education as it pertains to your personal health and fitness goals.
+      <br/>
+    
+        If you are not seeking weight change of nutritional guidance, please feel free to write n/a on every question and go on to the next section.</p>
+    </div>
+    
+    <h4>As best as you can remember right now, tell me generally about an average day of eating and drinking. Include time of day and what you might normally eat/drink around that time. This doesn’t have to be perfect; just capture your usual patterns. If you know them, please include total daily calories, carbs, protein and fats.</h4>
+    <div class="customTextArea"> 
+      <textarea type="text" class="paragraph" name="As best as you can remember right now, tell me generally about an average day of eating and drinking. Include time of day and what you might normally eat/drink around that time. This doesn’t have to be perfect; just capture your usual patterns. If you know them, please include total daily calories, carbs, protein and fats." placeholder="EX: 7am - toast w/ peanut butter and jam, coffee with cream and sugar, maybe a glass of orange juice"  ></textarea>
+     
+    </div>
+    
+    <h4>Do you have any food allergies or intolerances?  Any additional information relevant to your nutritional status?</h4>
+    <div class="input_field"> 
+      <input type="text" name="Do you have any food allergies or intolerances?  Any additional information relevant to your nutritional status?"  / >
+    </div> 
+    
+    <h4>List all dietary supplements you use, including their frequency and dose</h4>
+    <div class="customTextArea"> 
+      <textarea type="text" class="paragraph" name="List all dietary supplements you use, including their frequency and dose"   ></textarea>
+    </div> 
+    
+    <h4>Right now, on a scale of 1-10, how consistent would you say you are with eating habits?</h4>
+    <div class="radio_option"> 
+      <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="One" id="One" >
+      <label for="One">1</label>
+      <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Two" id="Two" >
+      <label for="Two">2</label>
+      <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Three" id="Three" >
+      <label for="Three">3</label>
+      <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Four" id="Four" >
+      <label for="Four">4</label>
+      <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Five" id="Five" >
+      <label for="Five">5</label>
+      <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Six" id="Six" >
+      <label for="Six">6</label>
+      <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Seven" id="Seven" >
+      <label for="Seven">7</label>
+      <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Eight" id="Eight" >
+      <label for="Eight">8</label>
+      <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Nine" id="Nine" >
+      <label for="Nine">9</label>
+      <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Ten" id="Ten" >
+      <label for="Ten">10</label>
+    
+    </div> 
+    
+    <h4>If you're less consistent than you'd like to be, what seems to get in the way or knock you off track?</h4>
+    <div class="customTextArea"> 
+      <textarea type="text" class="paragraph" name="If you're less consistent than you'd like to be, what seems to get in the way or knock you off track?" ></textarea>
+    </div> 
+    
+    <h4>What has your relationship with food been like in the recent or further past?  Is it something you are concerned about?</h4>
+    <div class="customTextArea"> 
+      <textarea type="text" class="paragraph" name="What has your relationship with food been like in the recent or further past?  Is it something you are concerned about?"  ></textarea>
+    </div> 
+    
+    <h4>Do you have regular/nearby access to a grocery store/local food or farmer's market/food pantry?  Do you have any concerns about accessing or purchasing food?</h4>
+    <div class="customTextArea"> 
+      <textarea type="text" class="paragraph" name="Do you have regular/nearby access to a grocery store/local food or farmer's market/food pantry?  Do you have any concerns about accessing or purchasing food?"   ></textarea>
+    </div>
+ </div>
+ <!-- End of Second Answer -->
+ <!-- This Answer Start -->
+ <div class="thirdanswer hidden ">
+  <div class="title_container">
+    <h2 class="formCssgroup formSectionTitle">Weight Training</h2>
+    <p class="formCssgroup">Answer these questions about your current weight/resistance/bodyweight training (if you perform any) as best you can, so I can have an idea of where you're at.</p>
+  </div>
+  
+  <h4>Please summarize your current resistance/weight training split/regimen (if any)</h4>
+  <div class="customTextArea"> 
+    <textarea class="paragraph" type="text" name="Please summarize your current resistance/weight training split/regimen (if any)" ></textarea>
+  </div> 
+  
+  <h4>How many sets do you generally perform per workout?  If unknown, would you descruve your training as low, medium, or high volume(few, average, or many sets/reps per workout)?  What rep range(s) do you work in?  How often do you train to failure or past failure?</h4>
+  <div class="customTextArea"> 
+    <textarea type="text" class="paragraph" name="How many sets do you generally perform per workout?  If unknown, would you descruve your training as low, medium, or high volume(few, average, or many sets/reps per workout)?  What rep range(s) do you work in?  How often do you train to failure or past failure.  Answer as much as you can, leace blank if unknown."  ></textarea>
+  </div> 
+  
+  <h4>Rate your perception of the exertion of your current weight training program:</h4>
+  <div class=" radio_option"> 
+      
+      
+  
+  
+  <input type="radio" name="Rate your perception of the exertion of your current weight training program" id="None" value="None"/>
+  <label class="verticalButton" for="None">None</label>
+  
+  <input type="radio" name="Rate your perception of the exertion of your current weight training program" id="Light" value="Light"/>
+  <label class="verticalButton" for="Light">Light</label>
+  
+  <input type="radio" name="Rate your perception of the exertion of your current weight training program" id="FairlyLight" value="FairlyLight"/>
+  <label class="verticalButton" for="FairlyLight">Fairly Light</label>
+  
+  <input type="radio" name="Rate your perception of the exertion of your current weight training program" id="somewhatHard" value="somewhatHard"/>
+  <label class="verticalButton" for="somewhatHard">Somewhat Hard</label>
+  
+  <input type="radio" name="Rate your perception of the exertion of your current weight training program" id="Hard" value="Hard"/>
+  <label class="verticalButton" for="Hard">Hard</label>
+  
+  </div> 
+  
+  <br/>
+  
+  <div class="title_container">
+    <h2 class="formCssgroup formSectionTitle">Cardiovascular Training</h2>
+    <p class="formCssgroup">Answer these questions about your current cardio/endurance/aerobic training (if you perform any) as best you can, do I can have an idea of where you're at. If you don't do any cardio, write "none".</p>
+  </div>
+  
+  <h4>Please summarize your current cardiovascular training regimen (if any).  Include schedule, intensity and type.</h4>
+  <div class="customTextArea"> 
+    <textarea type="text" class="paragraph" name="Please summarize your current cardiovascular training regimen (if any).  Include schedule, intensity and type."  ></textarea>
+  </div> 
+  
+  <h4>Rate your perception of the exertion of your current cardio program</h4>
+  <div class="radio_option"> 
+    
+  <input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="None_" value="None_"/>
+  <label class="verticalButton" for="None_">None</label>
+  
+  <input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="Light_" value="Light_"/>
+  <label class="verticalButton" for="Light_">Light</label>
+  
+  <input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="FairlyLight_" value="FairlyLight_"/>
+  <label class="verticalButton" for="FairlyLight_">Fairly Light</label>
+  
+  <input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="somewhatHard_" value="somewhatHard_"/>
+  <label class="verticalButton" for="somewhatHard_">Somewhat Hard</label>
+  
+  <input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="Hard_" value="Hard_"/>
+  <label class="verticalButton" for="Hard_">Hard</label>
+  </div>
+
+  <div class="title_container">
+    <h2 class="formCssgroup formSectionTitle">Nutrition</h2>
+    <p class="formCssgroup">Please answer as many of these questions as you feel comfortable as best you can, so I can have an idea of where you're at.</p>
+    <br/>
+    
+    <p class="formCssgroup">I'm not a nutritionist or registered dietician so I do not develop personalized meal plans, however I am certified to help with general nutrition education, teach you dietary habit change, and provide you with the tools, resources, and recommendations to guide you toward a diet that meets your goals. Answering these questions as thoroughly as you can will help me understand how your nutritional habits will affect your training in the gym, and help as a baseline for future nutritional education as it pertains to your personal health and fitness goals.
+    <br/>
+  
+      If you are not seeking weight change of nutritional guidance, please feel free to write n/a on every question and go on to the next section.</p>
+  </div>
+  
+  <h4>As best as you can remember right now, tell me generally about an average day of eating and drinking. Include time of day and what you might normally eat/drink around that time. This doesn’t have to be perfect; just capture your usual patterns. If you know them, please include total daily calories, carbs, protein and fats.</h4>
+  <div class="customTextArea"> 
+    <textarea type="text" class="paragraph" name="As best as you can remember right now, tell me generally about an average day of eating and drinking. Include time of day and what you might normally eat/drink around that time. This doesn’t have to be perfect; just capture your usual patterns. If you know them, please include total daily calories, carbs, protein and fats." placeholder="EX: 7am - toast w/ peanut butter and jam, coffee with cream and sugar, maybe a glass of orange juice"  ></textarea>
+   
+  </div>
+  
+  <h4>Do you have any food allergies or intolerances?  Any additional information relevant to your nutritional status?</h4>
+  <div class="input_field"> 
+    <input type="text" name="Do you have any food allergies or intolerances?  Any additional information relevant to your nutritional status?"  / >
+  </div> 
+  
+  <h4>List all dietary supplements you use, including their frequency and dose</h4>
+  <div class="customTextArea"> 
+    <textarea type="text" class="paragraph" name="List all dietary supplements you use, including their frequency and dose"   ></textarea>
+  </div> 
+  
+  <h4>Right now, on a scale of 1-10, how consistent would you say you are with eating habits?</h4>
+  <div class="radio_option"> 
+    <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="One" id="One" >
+    <label for="One">1</label>
+    <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Two" id="Two" >
+    <label for="Two">2</label>
+    <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Three" id="Three" >
+    <label for="Three">3</label>
+    <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Four" id="Four" >
+    <label for="Four">4</label>
+    <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Five" id="Five" >
+    <label for="Five">5</label>
+    <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Six" id="Six" >
+    <label for="Six">6</label>
+    <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Seven" id="Seven" >
+    <label for="Seven">7</label>
+    <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Eight" id="Eight" >
+    <label for="Eight">8</label>
+    <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Nine" id="Nine" >
+    <label for="Nine">9</label>
+    <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Ten" id="Ten" >
+    <label for="Ten">10</label>
+  
+  </div> 
+  
+  <h4>If you're less consistent than you'd like to be, what seems to get in the way or knock you off track?</h4>
+  <div class="customTextArea"> 
+    <textarea type="text" class="paragraph" name="If you're less consistent than you'd like to be, what seems to get in the way or knock you off track?" ></textarea>
+  </div> 
+  
+  <h4>What has your relationship with food been like in the recent or further past?  Is it something you are concerned about?</h4>
+  <div class="customTextArea"> 
+    <textarea type="text" class="paragraph" name="What has your relationship with food been like in the recent or further past?  Is it something you are concerned about?"  ></textarea>
+  </div> 
+  
+  <h4>Do you have regular/nearby access to a grocery store/local food or farmer's market/food pantry?  Do you have any concerns about accessing or purchasing food?</h4>
+  <div class="customTextArea"> 
+    <textarea type="text" class="paragraph" name="Do you have regular/nearby access to a grocery store/local food or farmer's market/food pantry?  Do you have any concerns about accessing or purchasing food?"   ></textarea>
+  </div>
+ </div>
+ <!-- End of Third Answer -->
+<br/>
+
+<!-- Custom Section End -->
 
       <div class="title_container">
-        <h2 class="formCssgroup formSectionTitle">Cardiovascular Training</h2>
-        <p class="formCssgroup">Answer these questions about your current cardio/endurance/aerobic training (if you perform any) as best you can, do I can have an idea of where you're at. If you don't do any cardio, write "none".</p>
+        <h2 class="formCssgroup formSectionTitle">Exercise History and Attitude</h2>
+        <p class="formCssgroup">Please fill out these questions about your current and past exercise history and experiences with/feelings toward exercise in general.
+            If you have any questions or concerns about the application or working with me in general, please feel free to contact me through email (natveiga@udel.edu) or DM me on Instagram (@swolboy.fit).</p>
+      </div>
+    
+      <h4>Are you interested in any weight/physique changes as part of your goals?</h4>
+      <div class="radio_option">
+    
+        <input type="radio" class="enableYes" name="Are you interested in any weight/physique changes as part of your goal?" value="Yes" id="Yes" oninput="enableBtn()" required>
+        <label for="Yes">Yes</label>
+        <input type="radio" class="enableNo" name="Are you interested in any weight/physique changes as part of your goal?" value="No" id="No" oninput="disableBtn()" >
+        <label for="No">No</label>
+        <br/>
+        <div class="controls">
+        <h5>If yes, what is your current weight? Please give a brief description of your weight history.</h5>
+        <textarea type="text" class="paragraph yespositiveparagraph" name="If yes, what is your current weight? Please give a brief description of your weight history." value="Yes" id="textP" placeholder="" readonly></textarea>
+        </div>
+      </div>
+        <br/>
+              
+      <h4>What is your daily, non-exercise activity level (housework, walking to work or school, home repairs, moving around at work, gardening)?</h4>
+      <div class="customTextArea"> 
+        <textarea type="text" class="paragraph" name="What is your daily, non-exercise activity level(housework, walking to work or school, home repairs, moving around at work, gardening)?" placeholder="EX:(housework, walking to work or school, home repairs, moving around at work, gardening)?"></textarea>
+        
+    </div> 
+    <h4>Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?</h4>
+    <div class="radio_option"> 
+        <input type="radio" name="Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?" value="Yes____" id="Yes____"  required>
+        <label for="Yes____">Yes</label>
+        <input type="radio" name="Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?" value="No____" id="No____"  >
+        <label for="No____">No</label>
+        <h5>If yes, please specify.</h5>
+      <textarea type="text" class="paragraph" name="Do you have any negative feelings toward, or have you had any bad experience with, physical activity programs?" value="Yes" id="textP" placeholder="" ></textarea>    
+    </div> 
+    <br/>
+    
+    <h4>Have you tried anything in the past to change your habits, health, fitness, and/or body?</h4>
+    <div class="radio_option"> 
+        <input type="radio" name="Have you tried anything in the past to change your habits, health, fitness, and/or body?" value="Yes_____" id="Yes_____" required>
+        <label for="Yes_____">Yes</label>
+        <input type="radio" name="Have you tried anything in the past to change your habits, health, fitness, and/or body?" value="No_____" id="No_____" >
+        <label for="No_____">No</label>
+        
+    </div> 
+    
+    <h5>Which of those things worked well for you?</h5>
+    <div class="customTextArea"> 
+      <textarea type="text" class="paragraph smallerText" name="Which of those things worked well for you?(Even if you might not be doing it right now.)" placeholder=""></textarea>
+    </div> 
+    
+    
+    <h5>Which of those things didnt work well for you?</h5>
+    <div class="customTextArea"> 
+      <textarea type="text" class="paragraph smallerText" name="Which of those things didnt work well for you?" placeholder=""></textarea>
+    </div> 
+    <br/>
+    <h4>How much time are you willing to devote to an exercise program?  Please answer in minutes/day, and days/week.</h4>
+    <div class="customTextArea"> 
+      <textarea type="text" class="paragraph" name="Please answer in minutes/day, and days/week."></textarea>
+    </div> 
+    
+    <h4>What are your short-term goals (in the next 8 to 12 weeks)?</h4>
+    <div class="customTextArea"> 
+      <textarea type="text" class="paragraph" name="What are your short-term goals (in the next 8 to 12 weeks)?" ></textarea>
+    </div> 
+    
+    <h4>What are your long-term goals?</h4>
+    <div class="customTextArea"> 
+      <textarea class="paragraph" type="text" name="What are your long-term goals?"  required></textarea>
+    </div> 
+    
+    <h4>Right now, how much do people around you and your environment support your health, fitness, nutrition, and/or behavior change goals?</h4>
+    <div class="customTextArea"> 
+      <textarea class="paragraph" type="text" name="Right now, how much do people around you and your environment support your health, fitness, nutrition, and/or behavior change goals?"   required></textarea>
+    </div> 
+    <br/>
+      
+      <!-- Section 7 -->
+      <div class="title_container">
+        <h2 class="formCssgroup formSectionTitle">Medical History</h2>
+        <p class="formCssgroup">Put "N/A" for fields that cannot be answered.  Fields in this section cannot be left blank.</p>
       </div>
       
-      <h4>Please summarize your current cardiovascular training regimen (if any).  Include schedule, intensity and type.</h4>
+      <h4>Please list any current medical diagnoses (e.g. Kidney disease, type II Diabetes, hypertension, PKU, etc.) – If none, type “none”. If present, are the conditions stable as determined by a qualified health care professional?</h4>
       <div class="customTextArea"> 
-        <textarea type="text" class="paragraph" name="Please summarize your current cardiovascular training regimen (if any).  Include schedule, intensity and type."  ></textarea>
-      </div> 
+        <textarea type="text" class="paragraph" name="Please list any current medical diagnoses (e.g. Kidney disease, type II Diabetes, hypertension, PKU, etc.) – If none, type “none”. If present, are the conditions stable as determined by a qualified health care professional?" required></textarea>
+      </div>
       
-      <h4>Rate your perception of the exertion of your current cardio program</h4>
+      <h4>Do you have any chronic illness or disability that you feel would impact your movement or exercise experience? In what way?</h4>
+      <div class="customTextArea"> 
+        <textarea type="text" class="paragraph" name="Do you have any chronic illness or disability that you feel would impact your movement or exercise experience? In what way?" required></textarea>
+      </div>
+      
+      <h4>Family history of medical diagnoses (Who? What? Example: Mother- Type II Diabetes). If none, type "none".</h4>
+      <div class="customTextArea"> 
+        <textarea type="text" class="paragraph" name="Family history of medical diagnoses (Who? What? Example: Mother- Type II Diabetes). If none, type `none`."  required></textarea>
+      </div>
+      
+      <h4>List all medications you CURRENTLY take (insulin, birth control, etc.), including their frequency and dose</h4>
+      <div class="customTextArea"> 
+        <textarea type="text" class="paragraph" name="List all medications you CURRENTLY take (insulin, birth control, etc.), including their frequency and dose"  required></textarea>
+      </div>
+      
+      <h4>Medication History (Past Medication)</h4>
+      <div class="customTextArea"> 
+        <textarea type="text" class="paragraph" name="Medication History (past medication)" required></textarea>
+      </div>
+      
+      <h4>Menopause status (if applicable):</h4>
       <div class="radio_option"> 
         
-      <input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="None_" value="None_"/>
-      <label class="verticalButton" for="None_">None</label>
-      
-      <input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="Light_" value="Light_"/>
-      <label class="verticalButton" for="Light_">Light</label>
-      
-      <input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="FairlyLight_" value="FairlyLight_"/>
-      <label class="verticalButton" for="FairlyLight_">Fairly Light</label>
-      
-      <input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="somewhatHard_" value="somewhatHard_"/>
-      <label class="verticalButton" for="somewhatHard_">Somewhat Hard</label>
-      
-      <input type="radio" name="Rate your perception of the exertion of your current weight training program(Cardio Vascular)" id="Hard_" value="Hard_"/>
-      <label class="verticalButton" for="Hard_">Hard</label>
-      </div>
-      </div>
-       <!--End of First Answer  -->
-
-       <div class="secondanswer hidden">
-        <div class="title_container">
-            <h2 class="formCssgroup formSectionTitle">Nutrition</h2>
-            <p class="formCssgroup">Please answer as many of these questions as you feel comfortable as best you can, so I can have an idea of where you're at.</p>
-            <br/>
-            
-            <p class="formCssgroup">I'm not a nutritionist or registered dietician so I do not develop personalized meal plans, however I am certified to help with general nutrition education, teach you dietary habit change, and provide you with the tools, resources, and recommendations to guide you toward a diet that meets your goals. Answering these questions as thoroughly as you can will help me understand how your nutritional habits will affect your training in the gym, and help as a baseline for future nutritional education as it pertains to your personal health and fitness goals.
-            <br/>
-          
-              If you are not seeking weight change of nutritional guidance, please feel free to write n/a on every question and go on to the next section.</p>
-          </div>
-          
-          <h4>As best as you can remember right now, tell me generally about an average day of eating and drinking. Include time of day and what you might normally eat/drink around that time. This doesn’t have to be perfect; just capture your usual patterns. If you know them, please include total daily calories, carbs, protein and fats.</h4>
-          <div class="customTextArea"> 
-            <textarea type="text" class="paragraph" name="As best as you can remember right now, tell me generally about an average day of eating and drinking. Include time of day and what you might normally eat/drink around that time. This doesn’t have to be perfect; just capture your usual patterns. If you know them, please include total daily calories, carbs, protein and fats." placeholder="EX: 7am - toast w/ peanut butter and jam, coffee with cream and sugar, maybe a glass of orange juice"  ></textarea>
-           
-          </div>
-          
-          <h4>Do you have any food allergies or intolerances?  Any additional information relevant to your nutritional status?</h4>
-          <div class="input_field"> 
-            <input type="text" name="Do you have any food allergies or intolerances?  Any additional information relevant to your nutritional status?"  / >
-          </div> 
-          
-          <h4>List all dietary supplements you use, including their frequency and dose</h4>
-          <div class="customTextArea"> 
-            <textarea type="text" class="paragraph" name="List all dietary supplements you use, including their frequency and dose"   ></textarea>
-          </div> 
-          
-          <h4>Right now, on a scale of 1-10, how consistent would you say you are with eating habits?</h4>
-          <div class="radio_option"> 
-            <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="One" id="One" >
-            <label for="One">1</label>
-            <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Two" id="Two" >
-            <label for="Two">2</label>
-            <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Three" id="Three" >
-            <label for="Three">3</label>
-            <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Four" id="Four" >
-            <label for="Four">4</label>
-            <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Five" id="Five" >
-            <label for="Five">5</label>
-            <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Six" id="Six" >
-            <label for="Six">6</label>
-            <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Seven" id="Seven" >
-            <label for="Seven">7</label>
-            <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Eight" id="Eight" >
-            <label for="Eight">8</label>
-            <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Nine" id="Nine" >
-            <label for="Nine">9</label>
-            <input type="radio" name="Right now, on a scale of 1-10, how consistent would you say you are with eating habits?" value="Ten" id="Ten" >
-            <label for="Ten">10</label>
-          
-          </div> 
-          
-          <h4>If you're less consistent than you'd like to be, what seems to get in the way or knock you off track?</h4>
-          <div class="customTextArea"> 
-            <textarea type="text" class="paragraph" name="If you're less consistent than you'd like to be, what seems to get in the way or knock you off track?" ></textarea>
-          </div> 
-          
-          <h4>What has your relationship with food been like in the recent or further past?  Is it something you are concerned about?</h4>
-          <div class="customTextArea"> 
-            <textarea type="text" class="paragraph" name="What has your relationship with food been like in the recent or further past?  Is it something you are concerned about?"  ></textarea>
-          </div> 
-          
-          <h4>Do you have regular/nearby access to a grocery store/local food or farmer's market/food pantry?  Do you have any concerns about accessing or purchasing food?</h4>
-          <div class="customTextArea"> 
-            <textarea type="text" class="paragraph" name="Do you have regular/nearby access to a grocery store/local food or farmer's market/food pantry?  Do you have any concerns about accessing or purchasing food?"   ></textarea>
-          </div>
-       </div>
-       <!-- End of Second Answer -->
-       <div class="thirdanswer hidden">
-           
-       </div>
-       <!-- End of Third Answer -->
-      <br/>
-      <!-- Section 2 -->
-      <div class="title_container">
-        <h2 class="formCssgroup formSectionTitle">Stress & Recovery</h2>
-        <p class="formCssgroup">Think about all the activities you’re involved in (e.g., work, school, caregiving, housework, travel). Then assess as best you can:</p>
-      
-      </div>
-      
-      <h4>Given all the demands of your life, what is your typical stress level on an average day?</h4>
-      <div class=" radio_option"> 
+        <input type="radio" name="Menopause status" value="Pre" id="Pre" >
+        <label class="verticalButton" for="Pre">Pre</label>
+        <input type="radio" name="Menopause status" value="Current" id="Current" >
+        <label class="verticalButton" for="Current">Current</label>
+        <input type="radio" name="Menopause status" value="NineHours" id="Post" >
+        <label class="verticalButton" for="Post">Post</label>
+        <p >Other <input type="input" name="Menopause status"  > </p>
         
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day??" value="One_" id="One_" required>
-        <label for="One_">1</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day??" value="Two_" id="Two_" >
-        <label for="Two_">2</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day??" value="Three_" id="Three_" >
-        <label for="Three_">3</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day??" value="Four_" id="Four_" >
-        <label for="Four_">4</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day??" value="Five_" id="Five_" >
-        <label for="Five_">5</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day??" value="Six_" id="Six_" >
-        <label for="Six_">6</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day??" value="Seven_" id="Seven_" >
-        <label for="Seven_">7</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day??" value="Eight_" id="Eight_" >
-        <label for="Eight_">8</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day??" value="Nine_" id="Nine_" >
-        <label for="Nine_">9</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day??" value="Ten_" id="Ten_" >
-        <label for="Ten_">10</label>
-      </div>
-      
-      <h4>On average, how many hours per night do you sleep?</h4>
-      <div class="radio_option"> 
-        
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day?" value="FourHoursOrFewer" id="FourHoursOrFewer" required>
-        <label  class="verticalButton"for="FourHoursOrFewer">4 Hours or Fewer</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day?" value="FiveHours" id="FiveHours" required>
-        <label  class="verticalButton"for="FiveHours">5 Hours</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day?" value="SixHours" id="SixHours" required>
-        <label class="verticalButton" for="SixHours">6 Hours</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day?" value="SevenHours" id="SevenHours" required>
-        <label class="verticalButton" for="SevenHours">7 Hours</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day?" value="EightHours" id="EightHours" required>
-        <label class="verticalButton" for="EightHours">8 Hours</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day?" value="NineHours" id="NineHours" required>
-        <label class="verticalButton" for="NineHours">9 Hours</label>
-        <input type="radio" name="Given all the demands of your life, what is your typical stress level on an average day?" value="TenHours+" id="TenHours+" required>
-        <label class="verticalButton" for="TenHours+">10 Hours +</label>
-      </div>
-      
-      <h4>How do you normaly cope with stress?</h4>
-      <div class="customTextArea"> 
-        <textarea type="text" class="paragraph" name="How do you normaly cope with stress?"  required></textarea>
       </div>
       <br/>
-      <!-- Section 3 -->
+      <!-- Section 8 -->
       <div class="title_container">
         <h2 class="formCssgroup formSectionTitle">Lifestyle & Readiness</h2>
         <p class="formCssgroup">Your personal life, mood, self image, sense of self, life stressors, etc.  can effect your adherence to a fitness program or how you experience the program.</p>
       </div>
       
-      
-      
-      <h4>How READY are you to implement the changes in training, nutrition, and behavior from our programming?(1 Not at all - 10 Completly)</h4>
-      <div class="radio_option"> 
-       
-        <input type="radio" name="How READY are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="One__" id="One__" required>
-        <label for="One__">1</label>
-        <input type="radio" name="How READY are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Two__" id="Two__" required>
-        <label for="Two__">2</label>
-        <input type="radio" name="How READY are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Three__" id="Three__" required>
-        <label for="Three__">3</label>
-        <input type="radio" name="How READY are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Four__" id="Four__" required>
-        <label for="Four__">4</label>
-        <input type="radio" name="How READY are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Five__" id="Five__" required>
-        <label for="Five__">5</label>
-        <input type="radio" name="How READY are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Six__" id="Six__" required>
-        <label for="Six__">6</label>
-        <input type="radio" name="How READY are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Seven__" id="Seven__" required>
-        <label for="Seven__">7</label>
-        <input type="radio" name="How READY are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Eight__" id="Eight__" required>
-        <label for="Eight__">8</label>
-        <input type="radio" name="How READY are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Nine__" id="Nine__" required>
-        <label for="Nine__">9</label>
-        <input type="radio" name="How READY are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Ten__" id="Ten__" required>
-        <label for="Ten__">10</label>
+      <h4>Can you describe a typical or recent day in your life that would help me understand you?</h4>
+      <div class="customTextArea"> 
+        <textarea type="text" class="paragraph" name="Can you describe a typical or recent day in your life that would help me understand you?"  required></textarea>
       </div>
       
-      <h4>How WILLING are you to implement the changes in training, nutrtiion, and behavior from our programming?</h4>
-      <div class="radio_option"> 
-        <input type="radio" name="How WILLING are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="One___" id="One___" required>
-        <label for="One___">1</label>
-        <input type="radio" name="How WILLING are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Two___" id="Two___" required>
-        <label for="Two___">2</label>
-        <input type="radio" name="How WILLING are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Three___" id="Three___" required>
-        <label for="Three___">3</label>
-        <input type="radio" name="How WILLING are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Four___" id="Four___" required>
-        <label for="Four___">4</label>
-        <input type="radio" name="How WILLING are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Five___" id="Five___" required>
-        <label for="Five___">5</label>
-        <input type="radio" name="How WILLING are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Six___" id="Six___" required>
-        <label for="Six___">6</label>
-        <input type="radio" name="How WILLING are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Seven___" id="Seven___" required>
-        <label for="Seven___">7</label>
-        <input type="radio" name="How WILLING are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Eight___" id="Eight___" required>
-        <label for="Eight___">8</label>
-        <input type="radio" name="How WILLING are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Nine___" id="Nine___" required>
-        <label for="Nine___">9</label>
-        <input type="radio" name="How WILLING are you to implement the changes in training, nutrtiion, and behavior from our programming?" value="Ten___" id="Ten___" required>
-        <label for="Ten___">10</label>
+      
+      <h4>Please list three prominent stressors you have at this time that may affect your ability to adhere to a fitness program.</h4>
+      <div class="customTextArea"> 
+        <textarea type="text" class="paragraph" name="Please list three prominent stressors you have at this time that may affect your ability to adhere to a fitness program." required></textarea>
+      </div>
+      
+      <h4>Has your weight or shape influenced how you think about (judge) yourself as a person?</h4>
+      <div class="customTextArea"> 
+        <textarea type="text" class="paragraph" name="Has your weight or shape influenced how you think about (judge) yourself as a person?"  required></textarea>
+      </div>
+      
+      <h4>Do you have any food or exercise rituals that concern you?  </h4>
+      <div class="radio_option customTextArea"> 
+        <input type="radio" name="Do you have any food or exercise rituals that concern you?  If yes, please explain" value="Yes______" id="Yes______" required>
+          <label for="Yes______">Yes</label>
+          <input type="radio" name="Do you have any food or exercise rituals that concern you?  If yes, please explain" value="No______" id="No______" >
+          <label for="No______">No</label>
+          <br/>
+          <h5>If yes, please explain</h5>
+        <textarea type="text" class="paragraph" name="Do you have any food or exercise rituals that concern you?  If yes, please explain" placeholder=""></textarea>
+      </div>
+      
+      <h4>What do you currently track or have tracked in the past?</h4>
+      <div class="checkbox_option" > 
+        <input class="CheckBoxInput" type="checkbox"name="What-do-you-currently-track-or-have-tracked-in-the-past?" value="training" id="training" / >
+        <label class="verticalButton" for="training">Training</label>
+        <input class="CheckBoxInput"type="checkbox" name="What-do-you-currently-track-or-have-tracked-in-the-past?" value="nutrtiion" id="nutrtiion" / >
+        <label class="verticalButton" for="nutrtiion">Nutrition</label>
+        <input class="CheckBoxInput"type="checkbox" name="What-do-you-currently-track-or-have-tracked-in-the-past?" value="weight" id="weight" / >
+        <label class="verticalButton" for="weight">Weight</label>
+        <input class="CheckBoxInput"type="checkbox" name="What-do-you-currently-track-or-have-tracked-in-the-past?" value="steps" id="steps" / >
+        <label class="verticalButton" for="steps">Steps</label>
+        <input class="CheckBoxInput"type="checkbox" name="What-do-you-currently-track-or-have-tracked-in-the-past?" value="sleep" id="sleep" / >
+        <label class="verticalButton" for="sleep">Sleep</label>
+        <input class="CheckBoxInput"type="checkbox" name="What-do-you-currently-track-or-have-tracked-in-the-past?" value="heart_rate" id="heart_rate" / >
+        <label class="verticalButton" for="heart_rate">Heart Rate</label>
+        <input class="CheckBoxInput"type="checkbox" name="What-do-you-currently-track-or-have-tracked-in-the-past?" value="heart_rate_variability" id="heart_rate_variability" / >
+        <label class="verticalButton" for="heart_rate_variability">Heart Rate Variability</label>
+        <input class="CheckBoxInput"type="checkbox" name="What-do-you-currently-track-or-have-tracked-in-the-past?" value="nothing" id="nothing" / >
+        <label class="verticalButton" for="nothing">Nothing</label>
+        <input class="CheckBoxInput"type="checkbox" name="What-do-you-currently-track-or-have-tracked-in-the-past?" value="other" id="other" / >
+        <label class="verticalButton" for="other">Other</label>
+        <h5>If other, please explain</h5>
+        <textarea type="text" class="paragraph smallerText" name="What-do-you-currently-track-or-have-tracked-in-the-past?"></textarea>
+      </div>
+      
+      <h4>What would you be comfortable or willing to track?</h4>
+      <div class="checkbox_option"> 
+        <input class="CheckBoxInput" type="checkbox" name="What would you be comfortable or willing to track?" value="training_" id="training_" / >
+        <label class="verticalButton" for="training_">Training</label>
+        <input class="CheckBoxInput"type="checkbox" name="What would you be comfortable or willing to track?" value="Calories" id="Calories" / >
+        <label class="verticalButton" for="Calories">Calories</label>
+        <input class="CheckBoxInput"type="checkbox" name="What would you be comfortable or willing to track?" value="Macronutrients" id="Macronutrients" / >
+        <label class="verticalButton" for="Macronutrients">Macronutrients</label>
+        <input class="CheckBoxInput"type="checkbox" name="What would you be comfortable or willing to track?" value="general_nutrition" id="general_nutrition" / >
+        <label class="verticalButton" for="general_nutrition">General Nutrtition</label>
+        <input class="CheckBoxInput"type="checkbox" name="What would you be comfortable or willing to track?" value="Bodyweight" id="Bodyweight" / >
+        <label class="verticalButton" for="Bodyweight">Bodyweight</label>
+        <input class="CheckBoxInput"type="checkbox" name="What would you be comfortable or willing to track?" value="steps_" id="steps_" / >
+        <label class="verticalButton" for="steps_">Steps</label>
+        <input class="CheckBoxInput"type="checkbox" name="What would you be comfortable or willing to track?" value="sleep_" id="sleep_" / >
+        <label class="verticalButton" for="sleep_">Sleep</label>
+        <input class="CheckBoxInput"type="checkbox" name="What would you be comfortable or willing to track?" value="heart_rate_" id="heart_rate_" / >
+        <label class="verticalButton" for="heart_rate_">Heart Rate</label>
+      
+        
+      </div>
+      
+      <h4>What do you expect from me as your coach?</h4>
+      <div class="customTextArea"> 
+        <textarea type="text" class="paragraph" name="What do you expect from me as your coach?"  required></textarea>
       </div>
       
       

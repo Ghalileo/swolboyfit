@@ -447,3 +447,7 @@ body {
 .formSectionTitle{
   font-family: 'Glacial';
 }
+/* Consulation Form CSS */
+.hidden{
+  display: none;
+}
