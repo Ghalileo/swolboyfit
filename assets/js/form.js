@@ -1,6 +1,7 @@
 
     // var form = document.getElementById("my-form");
     // const textparagraph = document.getElementsByClassName("yespositiveparagraph");
+    const 
     const thetextarea = document.getElementById("textP")
    
 
@@ -45,6 +46,36 @@
     //   });
     // }
     // form.addEventListener("submit", handleSubmit)
+// Test funtion #1
+// function showSection() {
+//     [].forEach.call(document.querySelectorAll('name=optionone'), function(button){
+//         document.getElementById(button.dataset.divid).className = button.checked? '' : 'hidden';
+//     })
+// }
 
-    
-    
+// window.onload = function () {
+//     [].forEach.call(document.querySelectorAll(['name=optionone']), function (button){
+//         button.onclick = showSection;
+//     })
+// }
+// End
+// Test Function #2
+// function handleOne() {
+//     const divOne = document.getElementById("firstanswer");
+//     if (divOne.hasAttribute('hidden')) {
+//       divOne.removeAttribute('hidden');
+//     } else {
+//       divOne.setAttribute('hidden');
+//     }
+//   }
+//   End
+// Test Function #3
+// $(document).ready(function() {
+//     $("input[name$='optionone']").click(function() {
+//         var test = $(this).val();
+
+//         $("div.desc").hide();
+//         $("#thefirstanswer" + test).show();
+//     });
+// });
+// 
